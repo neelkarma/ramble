@@ -9,9 +9,9 @@ import (
 )
 
 type Config struct {
-	Passhash string
-	EncSalt  string
-	EncIv    string
+	Passhash string `json:"passhash"`
+	EncSalt  string `json:"encSalt"`
+	EncIv    string `json:"encIv"`
 }
 
 func ReadConfig() *Config {
